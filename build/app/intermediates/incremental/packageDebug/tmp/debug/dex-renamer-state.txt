@@ -1,0 +1,4 @@
+#Wed Apr 17 16:28:34 CST 2024
+base.0=/Users/johnyen/Flutter_Widget_Example/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
