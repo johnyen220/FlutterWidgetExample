@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_widget_example/screens/listview/ListviewExampleWidget.dart';
 import 'package:flutter_widget_example/screens/appbar/AppBarApp.dart';
 import 'package:flutter_widget_example/screens/singlechildscrollview/SingleChildScrollViewExample.dart';
+import 'package:flutter_widget_example/screens/customwidget/CustomWidgetExample.dart';
 
 class SplashScreen extends StatefulWidget {
   static String routeName = "/splash";
@@ -84,7 +85,21 @@ class _SplashScreenState extends State<SplashScreen> {
                 },
                 child: const Text("Single Scroll View", style: TextStyle(fontSize: 25)),
               ),
-            )
+            ),
+            Container(
+              height: 80,
+              padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+              child:
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const CustomWidgetExample()),
+                  );
+                },
+                child: const Text("Custom Widget Example", style: TextStyle(fontSize: 25)),
+              ),
+            ),
           ],
         ),
       ),
