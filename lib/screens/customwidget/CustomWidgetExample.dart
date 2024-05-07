@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
-import '../../models/Post.dart';
 import 'component/header_with_seachbox.dart';
+import 'component/title_with_more_bbtn.dart';
 
 
 
@@ -64,6 +62,7 @@ class _CustomWidgetExampleState extends State<CustomWidgetExample> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget> [
               HeaderWithSearchBox(size: size),
+              TitleWithMoreBtn(title: "Recomended", press: () {}),
             ]
           ),
         )
